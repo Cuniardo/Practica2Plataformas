@@ -15,7 +15,7 @@ public class Tenis {
             if (playerOneMarcador > 2) {
                 return "Empate";
             } else {
-                return getScore(playerOneMarcador) + "Todos ";
+                return getScore(playerOneMarcador) + " " + "Todos";
             }
 
         } else {
@@ -27,7 +27,7 @@ public class Tenis {
                     return "Juego de " + (playerOneMarcador > playerTwoMarcador ? player1Name : player2Name);
                 }
             } else {
-                return getScore(playerOneMarcador) + " " + getScore(playerTwoMarcador);
+                return getScore(playerOneMarcador) + " a " + getScore(playerTwoMarcador);
             }
         }
 
@@ -35,13 +35,13 @@ public class Tenis {
 
     public String getScore(int punto) {
         if (punto == 0) {
-            return "Cero  ";
+            return "Cero";
         } else if (punto == 1) {
-            return "Quince ";
+            return "Quince";
         } else if (punto == 2) {
-            return "Treinta  ";
+            return "Treinta";
         } else {
-            return "Cuarenta  ";
+            return "Cuarenta";
         }
     }
 
